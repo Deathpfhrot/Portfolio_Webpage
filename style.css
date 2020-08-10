@@ -27,9 +27,9 @@ section{
         background-color: olive;
     }
 }
-
-h1{
-    font-size: 60px;
+@media (max-width: 440px)
+section{
+    padding: 20px;
     
 }
 #welcome-section{
@@ -114,6 +114,7 @@ header p{
 }
 .social-ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
     padding: 0;
