@@ -1,9 +1,103 @@
 section{
-    margin-top: 500px;
-    margin-left: 700px;
+  text-align: center;
+  padding: 20px;
 }
 
 #navbar{
-    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    background-color: brown;
+    color: white;
+    text-align: right;
+    padding: 20px;
+}
+
+@media screen and (max-width: 992px){
+    body{
+        background-color: blue;
+    }
+}
+@media screen and (max-width: 600px){
+    body{
+        background-color: olive;
+    }
+}
+
+h1{
+    font-size: 60px;
+    
+}
+#welcome-section{
+    background-color: gray;
+}
+#projects{
+    background-color: rgb(18, 55, 78);
+}
+#social{
+    background-color: darkslategray;
+}
+body{
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+.fab fa-facebook{
+    color: blue;
+}
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+footer{
+    background-color: brown;
+    padding: 20px;
+}
+
+header{
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header::after{
+    content: '';
+    background-color: #000;
+    position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+}
+header * {
+    position: relative;
+    z-index: 1;
+
+}
+
+header h1{
+    font-size: 60px;
+}
+header p{
+    font-size: 30px;
+    margin: 0;
+}
+.social-ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+footer .fa-heart{
+    color: black;
 }
